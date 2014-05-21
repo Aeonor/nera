@@ -32,6 +32,7 @@
         <?php include 'l-header.php'; ?>
         <?php echo $_content; ?>
         <?php include 'l-footer.php'; ?>
+        
         <!-- JAVASCRIPTS -->
         <script src="js/libs/less-1.6.1.min.js"></script>
     </body>
