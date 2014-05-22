@@ -11,8 +11,10 @@
         <title>Neralind.com</title>
         <link rel="canonical" href="http://www.neralind.com"/>
 
-        <link href='css/font/fonts.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet/less" type="text/css"  href="less/styles.less?<?php echo rand() ?>">
+        <link href='css/font/fonts.css' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css"  href="/stylesheets/styles.css" media="screen, projection" />
+        <!--<link rel="stylesheet" type="text/css"  href="/stylesheets/print.css" media="print" />-->
+        <!--<link rel="stylesheet" type="text/css"  href="/stylesheets/ie.css" />-->
         <?php
         if (isset($_stylesheets) && is_array($_stylesheets)):
             foreach ($_stylesheets AS $css):
@@ -32,6 +34,8 @@
         <?php include 'l-header.php'; ?>
         <?php echo $_content; ?>
         <?php include 'l-footer.php'; ?>
+
+
         
         <!-- JAVASCRIPTS -->
         <script src="js/libs/less-1.6.1.min.js"></script>

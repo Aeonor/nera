@@ -1,7 +1,7 @@
 <header class="l-header">
     <div class="l-container">
         <a href="#" class="l-header-logo">
-            <img src="img/neralind-logo.png" alt="Neralind.com - Communauté d'esprit" />
+            <img src="images/neralind-logo.png" alt="Neralind.com - Communauté d'esprit" />
         </a>
         <div class="l-menu">
             <nav>

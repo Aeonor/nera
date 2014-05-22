@@ -1,0 +1,35 @@
+form {
+	
+}
+
+fieldset {
+	legend {
+
+	}
+}
+
+input, select, textarea {	
+	&:required {
+		
+	}
+
+	&:valid {
+
+	}
+	
+	&:invalid {
+
+	}
+}
+
+input[type=search] {
+
+}
+
+input[type=submit], input[type=button], button {
+	cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+}
