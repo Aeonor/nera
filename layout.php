@@ -32,7 +32,11 @@
         <?php include 'l-header.php'; ?>
         <?php echo $_content; ?>
         <?php include 'l-footer.php'; ?>
+
+
         <!-- JAVASCRIPTS -->
-        <script src="js/libs/less-1.6.1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
     </body>
 </html>
