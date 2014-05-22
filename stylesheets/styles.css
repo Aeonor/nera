@@ -1,3 +1,6 @@
+/*=============================
+=            Paths            =
+=============================*/
 /*===============================
 =            Colours            =
 ===============================*/
@@ -10,6 +13,27 @@
 /*=====================================
 =            Media queries            =
 =====================================*/
+@font-face {
+  font-family: "Quicksand";
+  src: url(/font/quicksand-light-webfont.eot);
+  src: url(/font/quicksand-light-webfont.eot?#iefix) format('embedded-opentype'), url(/font/quicksand-light-webfont.woff) format('woff'), url(/font/quicksand-light-webfont.ttf) format('truetype'), url(/font/quicksand-light-webfont.svg) format('svg');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(/font/quicksand-light-webfont.eot);
+  src: url(/font/quicksand-light-webfont.eot?#iefix) format('embedded-opentype'), url(/font/quicksand-light-webfont.woff) format('woff'), url(/font/quicksand-light-webfont.ttf) format('truetype'), url(/font/quicksand-light-webfont.svg) format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(/font/quicksand-light-webfont.eot);
+  src: url(/font/quicksand-light-webfont.eot?#iefix) format('embedded-opentype'), url(/font/quicksand-light-webfont.woff) format('woff'), url(/font/quicksand-light-webfont.ttf) format('truetype'), url(/font/quicksand-light-webfont.svg) format('svg');
+  font-weight: 900;
+}
+
 /* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,12 +99,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 1, C:/wamp/www/neralind-mockup/sass/base/_body.scss */
+body {
+  font: 14px/1.3 "Quicksand", "Arial", "sans-serif";
+  background: #15161a;
+  color: white;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
 /*==============================
 =            Titles            =
 ==============================*/
+/* line 6, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+h1, h2,
+.h1, .h2 {
+  text-transform: uppercase;
+}
+
 /*=============================
 =            Links            =
 =============================*/
+/* line 21, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+a {
+  color: #9287a5;
+  text-decoration: none;
+}
+/* line 24, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+a:hover {
+  color: #776a8f;
+  text-decoration: underline;
+}
+
 /*==================================
 =            Paragraphs            =
 ==================================*/
