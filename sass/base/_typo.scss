@@ -1,0 +1,47 @@
+/*==============================
+=            Titles            =
+==============================*/
+
+h1,h2,
+.h1,.h2 {
+  text-transform: uppercase;
+}
+
+h1,h2,h3,
+.h1,.h2,.h3 {
+}
+h4,h5,h6,
+.h4,.h5,.h6 {
+}
+
+/*=============================
+=            Links            =
+=============================*/
+
+a {
+	color: $color-link;
+	text-decoration: none;
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: underline;
+	}
+	&:active {
+		
+	}
+	&:focus {
+
+	}
+}
+
+
+
+/*==================================
+=            Paragraphs            =
+==================================*/
+
+p {
+
+}
+
+
+

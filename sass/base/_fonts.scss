@@ -1,0 +1,18 @@
+$font-light-name:   "quicksand-light-webfont";
+$font-regular-name: "quicksand-regular-webfont";
+$font-bold-name:    "quicksand-bold-webfont";
+
+@include font-face("Quicksand", 
+    font-files($path-fonts + $font-light-name + ".woff", "woff", $path-fonts + $font-light-name + ".ttf", "truetype", $path-fonts + $font-light-name + ".svg", "svg"), 
+    $path-fonts + $font-light-name + ".eot", 
+    $font-light);
+
+@include font-face("Quicksand", 
+    font-files($path-fonts + $font-light-name + ".woff", "woff", $path-fonts + $font-light-name + ".ttf", "truetype", $path-fonts + $font-light-name + ".svg", "svg"), 
+    $path-fonts + $font-light-name + ".eot", 
+    $font-regular);
+
+@include font-face("Quicksand", 
+    font-files($path-fonts + $font-light-name + ".woff", "woff", $path-fonts + $font-light-name + ".ttf", "truetype", $path-fonts + $font-light-name + ".svg", "svg"), 
+    $path-fonts + $font-light-name + ".eot", 
+    $font-bold);

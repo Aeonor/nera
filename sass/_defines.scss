@@ -1,0 +1,68 @@
+/*=============================
+=            Paths            =
+=============================*/
+$path-fonts: "/font/";
+
+
+
+
+/*===============================
+=            Colours            =
+===============================*/
+$white:                      #fff;
+$black:                      #000;
+
+$cassis:                     #434652; //#15161a;a
+$cassis-dark:                darken($cassis, 10%);
+$cassis-darker:              darken($cassis-dark, 10%);
+$cassis-light:               lighten($cassis, 10%);
+$cassis-lighter:             lighten($cassis-light, 10%);
+
+$purple:                     #2e2937;
+$purple-light:               lighten($purple, 15%);
+$purple-lighter:             lighten($purple-light, 15%);
+$purple-bright:              lighten($purple-lighter, 10%);
+$purple-dark:                darken($purple,  5%);
+$purple-saturate:            saturate(lighten($purple, 40%), 60%);
+
+
+$color-background: $cassis-darker;
+$color-foreground: $white;
+
+$color-heading:              $purple-lighter; 
+$color-subheading:           $purple-light;
+$color-heading-strong:       $color-foreground;
+
+
+$color-header:               $purple;
+$color-footer:               $color-header;
+$color-spacebar:             $color-header;
+
+$color-link: $purple-bright;
+$color-link-hover: $purple-lighter;
+
+/*=============================
+=            Fonts            =
+=============================*/
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 900;
+
+/*=============================
+=            Sizes            =
+=============================*/
+
+/*=====================================
+=            Media queries            =
+=====================================*/
+
+
+
+
+
+
+
+
+
+
+

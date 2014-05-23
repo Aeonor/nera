@@ -11,8 +11,9 @@
         <title>Neralind.com</title>
         <link rel="canonical" href="http://www.neralind.com"/>
 
-        <link href='css/font/fonts.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet/less" type="text/css"  href="less/styles.less?<?php echo rand() ?>">
+        <link rel="stylesheet" type="text/css"  href="/stylesheets/styles.css" media="screen, projection" />
+        <!--<link rel="stylesheet" type="text/css"  href="/stylesheets/print.css" media="print" />-->
+        <!--<link rel="stylesheet" type="text/css"  href="/stylesheets/ie.css" />-->
         <?php
         if (isset($_stylesheets) && is_array($_stylesheets)):
             foreach ($_stylesheets AS $css):
@@ -35,7 +36,6 @@
 
 
         <!-- JAVASCRIPTS -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
     </body>
