@@ -1,3 +1,17 @@
+/*===========================
+=            All            =
+===========================*/
+html {
+	font-size: 100%;
+}
+
+body {
+	font: #{$font-size-base + "/"+$font-line-height-base} "Quicksand", "Arial", "sans-serif";
+	letter-spacing: -.05em;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+
 /*==============================
 =            Titles            =
 ==============================*/
@@ -9,7 +23,9 @@ h1,h2,
 
 h1,h2,h3,
 .h1,.h2,.h3 {
+
 }
+
 h4,h5,h6,
 .h4,.h5,.h6 {
 }

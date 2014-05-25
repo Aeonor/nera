@@ -1,3 +1,6 @@
+/*========================================
+=            Reponsive mixins            =
+========================================*/
 /*=============================
 =            Paths            =
 =============================*/
@@ -10,9 +13,65 @@
 /*=============================
 =            Sizes            =
 =============================*/
+/*=========================================
+=            Margin & Paddings            =
+=========================================*/
 /*=====================================
 =            Media queries            =
 =====================================*/
+/*=================================
+=            Reponsive            =
+=================================*/
+/* line 1, C:/wamp/www/neralind-mockup/sass/base/_responsive.scss */
+.r-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 6, C:/wamp/www/neralind-mockup/sass/tools/_mixins.scss */
+.r-container:before, .r-container:after {
+  content: " ";
+  display: table;
+}
+/* line 10, C:/wamp/www/neralind-mockup/sass/tools/_mixins.scss */
+.r-container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 1, C:/wamp/www/neralind-mockup/sass/base/_responsive.scss */
+  .r-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1, C:/wamp/www/neralind-mockup/sass/base/_responsive.scss */
+  .r-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1, C:/wamp/www/neralind-mockup/sass/base/_responsive.scss */
+  .r-container {
+    width: 1170px;
+  }
+}
+
+/* line 19, C:/wamp/www/neralind-mockup/sass/base/_responsive.scss */
+.r-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 6, C:/wamp/www/neralind-mockup/sass/tools/_mixins.scss */
+.r-row:before, .r-row:after {
+  content: " ";
+  display: table;
+}
+/* line 10, C:/wamp/www/neralind-mockup/sass/tools/_mixins.scss */
+.r-row:after {
+  clear: both;
+}
+
 @font-face {
   font-family: "Quicksand";
   src: url(/font/quicksand-light-webfont.eot);
@@ -101,16 +160,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, C:/wamp/www/neralind-mockup/sass/base/_body.scss */
 body {
-  font: 14px/1.3 "Quicksand", "Arial", "sans-serif";
   background: #15161a;
   color: white;
+}
+
+/*===========================
+=            All            =
+===========================*/
+/* line 4, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 8, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+body {
+  font: 1em/1.42857 "Quicksand", "Arial", "sans-serif";
+  letter-spacing: -.05em;
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
 /*==============================
 =            Titles            =
 ==============================*/
-/* line 6, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+/* line 20, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
 h1, h2,
 .h1, .h2 {
   text-transform: uppercase;
@@ -119,12 +191,12 @@ h1, h2,
 /*=============================
 =            Links            =
 =============================*/
-/* line 21, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+/* line 37, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
 a {
   color: #9287a5;
   text-decoration: none;
 }
-/* line 24, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
+/* line 40, C:/wamp/www/neralind-mockup/sass/base/_typo.scss */
 a:hover {
   color: #776a8f;
   text-decoration: underline;
@@ -133,12 +205,134 @@ a:hover {
 /*==================================
 =            Paragraphs            =
 ==================================*/
-/* line 29, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
-input[type=submit], input[type=button], button {
+/* line 11, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input, select, textarea {
+  padding: 10px 13px;
+  border: 1px solid #24262c;
+  outline: 0;
+  background: #191a1e;
+  color: #8c8c8c;
+  font-family: inherit;
+  vertical-align: middle;
+}
+/* line 22, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input:hover, select:hover, textarea:hover {
+  color: #a3a3a3;
+}
+/* line 26, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input:active, input:focus, input.selected, select:active, select:focus, select.selected, textarea:active, textarea:focus, textarea.selected {
+  color: #b3b3b3;
+}
+
+/* line 49, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input[type=submit], input[type=button], button, .btn {
+  display: inline-block;
+  padding: .85em 1.5em;
+  border: 0;
+  background-color: #2e2937;
+  -webkit-box-shadow: inset 1px -5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 1px -5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px -5px 10px 0 rgba(0, 0, 0, 0.2);
+  color: #fcfcfc;
+  text-transform: lowercase;
+  cursor: pointer;
+  /*
+    form.search &, &.search, &.browse {
+      padding: 0;
+      width: 38px;
+      height: 38px;
+      //border: 1px solid @color-btn-primary-border;
+      border-left: 0;
+      margin-left: -5px;
+      font-weight: 300;
+      font-size: 1.7em;
+    }
+  
+    form.search &, &.search {
+      text-indent: -9999px;
+      .sprite(search, 28px, 3px, 4px);
+    }*/
+}
+/* line 63, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus, button:hover, button:focus, .btn:hover, .btn:focus {
+  background-color: #353040;
+  outline: none;
+}
+/* line 68, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+input[type=submit]:active, input[type=submit].selected, input[type=button]:active, input[type=button].selected, button:active, button.selected, .btn:active, .btn.selected {
+  background-color: #353040;
+  -webkit-box-shadow: inset 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 91, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+.btn-light {
+  background-color: #463f54 !important;
+}
+
+/* line 95, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
+label {
   cursor: pointer;
 }
 
-/* line 33, C:/wamp/www/neralind-mockup/sass/base/_form.scss */
-label {
-  cursor: pointer;
+/*================================
+=            l-header            =
+================================*/
+/* line 4, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header {
+  height: 130px;
+  background: #2e2937;
+}
+
+/* line 9, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-logo {
+  display: block;
+  float: left;
+  line-height: 130px;
+}
+/* line 15, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-logo img {
+  max-height: 65px;
+  vertical-align: middle;
+}
+
+/*==============================
+=            l-menu            =
+==============================*/
+/* line 24, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-menu {
+  float: right;
+}
+
+/*==============================
+=            l-form            =
+==============================*/
+/* line 31, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-form {
+  float: right;
+  line-height: 130px;
+}
+
+/* line 36, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-menu-list {
+  vertical-align: middle;
+}
+
+/* line 41, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+.l-header-menu-item a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  /* line 46, C:/wamp/www/neralind-mockup/sass/layout/_l-header.scss */
+  .l-header-menu-item-menu {
+    display: none;
+  }
+}
+
+/* line 1, C:/wamp/www/neralind-mockup/sass/layout/_l-footer.scss */
+.l-footer {
+  background: #2e2937;
+  padding: 30px 0;
 }

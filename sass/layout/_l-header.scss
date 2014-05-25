@@ -1,0 +1,50 @@
+/*================================
+=            l-header            =
+================================*/
+.l-header {
+	height: $height-l-header-md;
+	background: $color-header;
+}
+
+.l-header-logo {
+	display: block;
+	float: left;
+	line-height: $height-l-header-md;
+    //line-height: @header-height-md;
+
+    img {
+    	max-height: round($height-l-header-md / 2);
+    	vertical-align: middle;
+    }
+}
+
+/*==============================
+=            l-menu            =
+==============================*/
+.l-header-menu {
+	float: right;
+}
+
+/*==============================
+=            l-form            =
+==============================*/
+.l-header-form {
+	float: right;
+	line-height: $height-l-header-md;
+}
+
+.l-header-menu-list {
+	vertical-align: middle;
+}
+
+.l-header-menu-item {
+	a {
+		color: $color-foreground;	
+	}
+}
+
+.l-header-menu-item-menu {
+	@media #{$for-sm} {
+		display: none;
+	}
+}

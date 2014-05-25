@@ -9,6 +9,26 @@ fieldset {
 }
 
 input, select, textarea {	
+	padding: 10px 13px;
+
+	border: 1px solid $color-input-border;
+	outline: 0;
+	background: $color-input-background;
+
+	color: darken($color-input, 15%);
+	font-family: inherit;
+	vertical-align: middle;
+
+	&:hover {
+		color: darken($color-input, 6%);
+	}
+
+	&:active, &:focus, &.selected {
+		color: $color-input;
+	}
+
+	//.placeholder(@color-input-placeholder);
+	
 	&:required {
 		
 	}
@@ -26,8 +46,50 @@ input[type=search] {
 
 }
 
-input[type=submit], input[type=button], button {
-	cursor: pointer;
+input[type=submit], input[type=button], button, .btn {
+  display: inline-block;
+  padding: .85em 1.5em;
+
+  border: 0;
+
+  background-color: $color-btn-background;
+  @include single-box-shadow(rgba(0,0,0,.2), 1px, -5px, 10px, 0, inset);
+
+  color: lighten($color-btn-background, 80%);
+  text-transform: lowercase;  
+
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: $color-btn-background-hover;
+    outline: none;
+  }
+
+  &:active, &.selected {
+    background-color: $color-btn-background-hover;
+  @include single-box-shadow(rgba(0,0,0,.2), 1px, 5px, 10px, 0, inset);
+  }
+
+/*
+  form.search &, &.search, &.browse {
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    //border: 1px solid @color-btn-primary-border;
+    border-left: 0;
+    margin-left: -5px;
+    font-weight: 300;
+    font-size: 1.7em;
+  }
+
+  form.search &, &.search {
+    text-indent: -9999px;
+    .sprite(search, 28px, 3px, 4px);
+  }*/
+}
+
+.btn-light {
+	background-color: lighten($color-btn-background, 10%) !important;
 }
 
 label {

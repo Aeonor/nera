@@ -30,31 +30,80 @@ $color-background: $cassis-darker;
 $color-foreground: $white;
 
 $color-heading:              $purple-lighter; 
-$color-subheading:           $purple-light;
 $color-heading-strong:       $color-foreground;
+$color-subheading:           $purple-light;
 
 
 $color-header:               $purple;
 $color-footer:               $color-header;
 $color-spacebar:             $color-header;
 
-$color-link: $purple-bright;
-$color-link-hover: $purple-lighter;
+$color-link:                 $purple-bright;
+$color-link-hover:           $purple-lighter;
+
+// Forms
+$color-input-background:     lighten($color-background, 1.5%);
+$color-input-border:         lighten($color-input-background, 5%);
+$color-input:                darken($color-foreground, 30%);
+$color-input-placeholder:    darken($color-input, 15%);
+$color-btn-background:       $purple;
+$color-btn-background-hover: lighten($color-btn-background, 3%);
 
 /*=============================
 =            Fonts            =
 =============================*/
-$font-light: 300;
-$font-regular: 400;
-$font-bold: 900;
+$font-light:                 300;
+$font-regular:               400;
+$font-bold:                  900;
+
+$font-size-base:             1em;
+$font-line-height-base:      1.428571429;
 
 /*=============================
 =            Sizes            =
 =============================*/
+$height-l-header-md:         130px;
+$height-l-header-sm:         90px;
+$height-l-header-xs:         100px;
+
+/*=========================================
+=            Margin & Paddings            =
+=========================================*/
+$margin-base:                15px;
+
+
+
 
 /*=====================================
 =            Media queries            =
 =====================================*/
+$screen-xs:                  480px;  // Extra Small Screen / Telephone
+$screen-sm:                  768px;  // Small screen / tablet
+$screen-md:                  992px;  // Medium screen / desktop
+$screen-lg:                  1200px; // Large screen / wide desktop
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1);
+$screen-sm-max:              ($screen-md - 1);
+$screen-md-max:              ($screen-lg - 1);
+
+// Direct media queries
+$for-xs:                     "(max-width: " + $screen-xs-max + ")";
+$for-sm:                     "(min-width: " + $screen-sm + ")";
+$for-md:                     "(min-width: " + $screen-md + ")";
+$for-lg:                     "(min-width: " + $screen-lg + ")";
+
+/*=================================
+=            Reponsive            =
+=================================*/
+$grid-gutter-width:          $margin-base * 2;
+
+$container-sm:               ((720px + $grid-gutter-width));  // Small Screen / tablet
+$container-md:               ((940px + $grid-gutter-width));  // Medium screen / desktop
+$container-lg:               ((1140px + $grid-gutter-width)); // Large screen / wide desktop
+
+
+
 
 
 

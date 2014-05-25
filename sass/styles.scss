@@ -1,4 +1,6 @@
 @import "compass/css3";
+@import "tools/mixins";
 
 @import "defines";
-@import "base/_main";
+@import "base/main";
+@import "layout/main";
