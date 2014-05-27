@@ -18,7 +18,7 @@
         <form method="get" action="#" class="l-header-form form-search">
             <div>
                 <input type="search" name="q" placeholder="Rechercher sur le site" />
-                <input type="submit" class="btn btn-light btn-search" value="Search" />
+                <input type="submit" value="Search" class="btn btn-light btn-search" />
             </div>
         </form>
         

@@ -3,7 +3,7 @@
 	margin-left: auto;
 	padding-left:  ($grid-gutter-width / 2);
 	padding-right: ($grid-gutter-width / 2);
-	@include clearfix();
+	@include pie-clearfix;
 
 	@media #{$for-sm} {
 		width: $container-sm;

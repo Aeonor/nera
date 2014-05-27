@@ -92,6 +92,12 @@ input[type=submit], input[type=button], button, .btn {
 	background-color: lighten($color-btn-background, 10%) !important;
 }
 
+.btn-search {
+   @include hide-text(left);
+   height: 38px;
+   width: 38px;
+}
+
 label {
-	cursor: pointer;
+	cursor: pointer; 
 }
